@@ -24,17 +24,11 @@ fi
  
 # Install ruby
 if grep -q +ruby/2.2.2 .provisioning-progress; then
-  echo "--> ruby-2.2.2 is installed, moving on."
+  echo "--> ruby-2.2.2 and rvm are installed, moving on."
 else
-  echo "--> Installing ruby-2.2.2 ..."
-  su macsa -c "mkdir -p /home/macsa/downloads; cd /home/macsa/downloads; \
-                 wget --no-check-certificate https://ftp.ruby-lang.org/pub/ruby/2.2/ruby-2.2.2.tar.gz; \
-                 tar -xvf ruby-2.2.2.tar.gz; cd ruby-2.2.2; \
-                 mkdir -p /home/macsa/ruby; \
-                 ./configure --prefix=/home/macsa/ruby --disable-install-doc; \
-                 make; make install;"
-  sudo -u macsa printf 'export PATH=/home/macsa/ruby/bin:$PATH\n' >> /home/macsa/.profile
- 
+  echo "--> Installing ruby-2.2.2 and rvm ..."
+  gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+  \curl -sSL https://get.rvm.io | bash -s stable
   su macsa -c "echo +ruby/2.2.2 >> /home/macsa/.provisioning-progress"
   echo "--> ruby-2.2.2 is now installed."
 fi
