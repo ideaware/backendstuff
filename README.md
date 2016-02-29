@@ -1,10 +1,32 @@
-## Ideaware Backend Team Stuff
+# Ideaware Backend Team Stuff
 
 The main purpose of this repo is to collect stuff related to backend. Be it conf. scripts, setup scripts, server dirty hacks, links, etc.
 
-### Dependencies Scripts
+## What you'll find
 
-The first one to be installed should be *lib_essentials.sh* as it installs basic stuff for other software to run on the server.
+- dependencies/ folder
 
-1. dependencies/lib_essentials.sh
-2. dependencies/fix_locale.sh
+All system dependencies in individual files:
+
+	- lib essentials
+	- RVM
+	- MySQL
+	- PostgreSQL
+	- NodeJS
+	- Redis
+	- Passenger + Nginx
+	- WKHTMLtoPDF
+	- Image magick
+	- En Locale
+
+- fixers/ folder
+
+Some installations require more work, so the fixers come to help.
+
+	- Fixer for WKHTMLtoPDF
+
+- provisioners/ folder
+
+Script that gathers all required dependencies for an App.
+
+	- Macsa server provisioner
