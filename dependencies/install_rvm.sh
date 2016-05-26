@@ -8,6 +8,7 @@ sudo usermod -a -G rvm `whoami`
 
 echo "Installing ruby-2.2.2."
 rvm install ruby-2.2.2
+
 echo "Setting ruby-2.2.2. as default"
 rvm --default use ruby-2.2.2
 
