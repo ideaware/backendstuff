@@ -18,7 +18,7 @@ else
   gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
   \curl -sSL https://get.rvm.io | bash -s stable
   su kisstle -c "echo +rvm >> /home/kisstle/.provisioning-progress"
-
+  
   echo "Follow steps in dependencies/install_rvm.sh to install Ruby 2.2.2"
   
   echo "--> rvm is now installed."
