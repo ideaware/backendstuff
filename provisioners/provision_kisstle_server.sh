@@ -34,16 +34,6 @@ else
   echo "--> rvm is now installed."
 fi
 
-# Install bundler
-if grep -q +bundler .provisioning-progress; then
-  echo "--> bundler already installed, moving on."
-else
-  echo "--> Installing bundler..."
-  su kisstle -c "/home/kisstle/ruby/bin/gem install bundler --no-ri --no-rdoc"
-  su kisstle -c "echo +bundler >> /home/kisstle/.provisioning-progress"
-  echo "--> +bundler is now installed."
-fi
-
 # Install postgresql
 if grep -q +postgresql .provisioning-progress; then
   echo "--> postgresql already installed, moving on."
