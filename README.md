@@ -19,6 +19,8 @@ All system dependencies in individual files:
 	- Image magick
 	- En Locale
 
+> Do not install RVM with `bash` but issue every command one by one
+
 - fixers/ folder
 
 Some installations require more work, so the fixers come to help.
