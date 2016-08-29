@@ -32,3 +32,4 @@ Some installations require more work, so the fixers come to help.
 Script that gathers all required dependencies for an App.
 
 	- Macsa server provisioner
+	- Kisstle server provisioner
