@@ -10,7 +10,7 @@ else
 	apt-add-repository ppa:chris-lea/node.js
 	apt-get update
 	apt-get -y install nodejs # needed by Rails to have a Javascript runtime
-  su macsa -c "echo +nodejs >> /home/macsa/.provisioning-progress"
+  	su ubuntu -c "echo +nodejs >> /home/ubuntu/.provisioning-progress"
 	echo "--> nodeJS is now installed"
 fi
 
@@ -22,7 +22,7 @@ else
   apt-get update
   apt-get -y install postgresql
   apt-get -y install libpq-dev
-  su kisstle -c "echo +postgresql >> /home/kisstle/.provisioning-progress"
+  su ubuntu -c "echo +postgresql >> /home/ubuntu/.provisioning-progress"
   echo "--> +postgresql is now installed."
 fi
 
