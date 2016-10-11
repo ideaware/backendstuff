@@ -1,6 +1,14 @@
-# Ideaware Backend Team Stuff
+# Ideaware Backend Team's Stuff
 
-The main purpose of this repo is to collect stuff related to backend. Be it conf. scripts, setup scripts, server dirty hacks, links, etc.
+The main purpose of this repo is to collect stuff related to backend. Be it configuration scripts, server dirty hacks, links, etc.
+
+All this scrips works only on [debian-based](https://en.wikipedia.org/wiki/List_of_Linux_distributions#Debian-based) distros:
+
+- Ubuntu
+- Linux Mint
+- ElementaryOS
+- Kubuntu
+- Lubuntu
 
 ## What you'll find
 
@@ -19,8 +27,6 @@ All system dependencies in individual files:
 	- Image magick
 	- En Locale
 
-> Do not install RVM with `bash` but issue every command one by one
-
 - fixers/ folder
 
 Some installations require more work, so the fixers come to help.
@@ -29,7 +35,7 @@ Some installations require more work, so the fixers come to help.
 
 - provisioners/ folder
 
-Script that gathers all required dependencies for an App.
+Script that gathers all required dependencies for a Ruby on Rails App.
 
 	- Macsa server provisioner
 	- Kisstle server provisioner
