@@ -2,7 +2,7 @@
 
 The main purpose of this repo is to collect stuff related to backend. Be it configuration scripts, server dirty hacks, links, etc.
 
-All this scrips works only on [debian-based](https://en.wikipedia.org/wiki/List_of_Linux_distributions#Debian-based) distros:
+These scrips located in [dependencies](dependencies/) folder work only on [debian-based](https://en.wikipedia.org/wiki/List_of_Linux_distributions#Debian-based) distros:
 
 - Ubuntu
 - Linux Mint
@@ -10,35 +10,39 @@ All this scrips works only on [debian-based](https://en.wikipedia.org/wiki/List_
 - Kubuntu
 - Lubuntu
 
-## What you'll find
+## dependencies/ folder
 
-- dependencies/ folder
+Dependencies in individual files:
 
-All system dependencies in individual files:
+- lib essentials
+- RVM
+- MySQL
+- PostgreSQL
+- NodeJS
+- Redis
+- Passenger + Nginx
+- WKHTMLtoPDF
+- Image magick
+- En Locale
 
-	- lib essentials
-	- RVM
-	- MySQL
-	- PostgreSQL
-	- NodeJS
-	- Redis
-	- Passenger + Nginx
-	- WKHTMLtoPDF
-	- Image magick
-	- En Locale
+## macos/ folder
 
-- fixers/ folder
+Dependencies that can be installed in Mac via shell scripts or using homebrew.
+
+- Image magick
+
+## fixers/ folder
 
 Some installations require more work, so the fixers come to help.
 
-	- Fixer for WKHTMLtoPDF
+- Fixer for WKHTMLtoPDF
 
-- provisioners/ folder
+## provisioners/ folder
 
-Script that gathers all required dependencies for a Ruby on Rails App.
+Scripts that gather all required dependencies for a Ruby on Rails App.
 
-	- Macsa server provisioner
-	- Kisstle server provisioner
+- Macsa server provisioner
+- Kisstle server provisioner
 
 ## License
 
