@@ -2,7 +2,7 @@
 
 # 1. Symlink ./letsencrypt to /etc/cron.monthly/letsencrypt
 
-sudo ln -sf ./letsencrypt /etc/cron.monthly/
+sudo ln -sf /home/$(whoami)/backendstuff/configurators/letsencrypt /etc/cron.monthly/
 
 # 2. Make it executable
 
