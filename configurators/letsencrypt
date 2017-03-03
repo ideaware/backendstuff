@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+/opt/certbot-auto renew \
+   --noninteractive \
+   --post-hook "service nginx restart"
