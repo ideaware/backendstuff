@@ -12,6 +12,21 @@ These scrips located in [dependencies](dependencies/) folder work only on [debia
 
 ## Folders
 
+### AWS
+
+AWS utilities installation and/or configuration
+
+- Code Deploy Agent
+- AWS CLI
+
+### Configurators
+
+For:
+
+- Let's Encrypt certificates auto renewal
+- Unattended upgrades
+- Jenkins Nginx proxy
+
 ### Dependencies
 
 Basic software(mostly for Ruby on Rails apps)
@@ -31,6 +46,13 @@ Basic software(mostly for Ruby on Rails apps)
 - [Varnish](https://varnish-cache.org/)
 - [WKHTMLtoPDF](https://wkhtmltopdf.org/)
 
+### Fixers
+
+Some installations require more work, so the fixers come to help.
+
+- Fixer for WKHTMLtoPDF
+- RVM Troubleshooting
+
 ### macOS
 
 Dependencies that can be installed in macOS via shell scripts or using homebrew.
@@ -38,12 +60,6 @@ Dependencies that can be installed in macOS via shell scripts or using homebrew.
 - ImageMagick
 - Redis
 - Brew
-
-### Fixers
-
-Some installations require more work, so the fixers come to help.
-
-- Fixer for WKHTMLtoPDF
 
 ## License
 
