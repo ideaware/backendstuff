@@ -32,6 +32,7 @@ For:
 Basic software(mostly for Ruby on Rails apps)
 
 - [ImageMagick](https://en.wikipedia.org/wiki/ImageMagick)
+- Java 8
 - [Jenkins](https://jenkins.io)
 - [Let's Encrypt](https://letsencrypt.org/)
 - Library Essentials
