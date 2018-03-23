@@ -1,6 +1,6 @@
 # Ideaware Backend Team's Stuff
 
-The main purpose of this repo is to collect stuff related to backend. Be it configuration scripts, server dirty hacks, links, etc.
+This repo collects configuration scripts, server hacks, links, etc.
 
 These scrips located in [dependencies](dependencies/) folder work only on [debian-based](https://en.wikipedia.org/wiki/List_of_Linux_distributions#Debian-based) distros:
 
@@ -10,39 +10,40 @@ These scrips located in [dependencies](dependencies/) folder work only on [debia
 - Kubuntu
 - Lubuntu
 
-## dependencies/ folder
+## Folders
 
-Dependencies in individual files:
+### Dependencies
 
-- lib essentials
-- RVM
-- MySQL
-- PostgreSQL
-- NodeJS
+Basic software(mostly for Ruby on Rails apps)
+
+- [ImageMagick](https://en.wikipedia.org/wiki/ImageMagick)
+- [Jenkins](https://jenkins.io)
+- [Let's Encrypt](https://letsencrypt.org/)
+- Library Essentials
+- English Locale
+- [MySQL](http://www.mysql.com/)
+- [Nginx](https://nginx.org/)
+- [NodeJS](https://nodejs.org/)
+- [Passenger + Nginx](https://www.phusionpassenger.com/)
+- [PostgreSQL](https://postgresql.org/)
+- [Redis](https://redis.io/)
+- [RVM](https://rvm.io/)
+- [Varnish](https://varnish-cache.org/)
+- [WKHTMLtoPDF](https://wkhtmltopdf.org/)
+
+### macOS
+
+Dependencies that can be installed in macOS via shell scripts or using homebrew.
+
+- ImageMagick
 - Redis
-- Passenger + Nginx
-- WKHTMLtoPDF
-- Image magick
-- En Locale
+- Brew
 
-## macos/ folder
-
-Dependencies that can be installed in Mac via shell scripts or using homebrew.
-
-- Image magick
-
-## fixers/ folder
+### Fixers
 
 Some installations require more work, so the fixers come to help.
 
 - Fixer for WKHTMLtoPDF
-
-## provisioners/ folder
-
-Scripts that gather all required dependencies for a Ruby on Rails App.
-
-- Macsa server provisioner
-- Kisstle server provisioner
 
 ## License
 
