@@ -1,4 +1,4 @@
-# Ideaware Backend Team's Stuff
+# Stuff for Backends
 
 This repo collects configuration scripts, server hacks, links, etc.
 
