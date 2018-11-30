@@ -2,15 +2,15 @@
 
 ### Make sure rvm is in your path.
 
-Open ~/.profile and add path of rvm:
+Open `~/.profile` and add path of rvm:
 
-```
+```bash
 export PATH=$PATH:/usr/local/rvm
 ```
 
 ### If you installed it as root issue this command to give permission to all users to rvm
 
-```
+```bash
 sudo chmod -R a+xwr /usr/local/rvm
 ```
 

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "--> Installing Image magick in the machine..."
 apt-get update
 apt-get -y install libpng12-dev libglib2.0-dev zlib1g-dev libbz2-dev libtiff4-dev libjpeg8-dev
