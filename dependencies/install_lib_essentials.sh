@@ -5,12 +5,10 @@ apt-get -y install \
   build-essential \
   curl \
   git-core \
-  python-software-properties \
   htop \
   vim \
   libfontconfig1 \
   libgmp-dev \
-  software-properties-common \
   zlib1g-dev \
   libssl-dev \
   libreadline6-dev \
