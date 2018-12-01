@@ -1,14 +1,28 @@
 # Stuff for Backends
 
-This repo collects configuration scripts, server hacks, links, etc.
+A collection of configuration scripts for Ubuntu servers. Most of the work present here works from Ubuntu 12.04.
 
-These scrips located in [dependencies](dependencies/) folder work only on [debian-based](https://en.wikipedia.org/wiki/List_of_Linux_distributions#Debian-based) distros:
+Scrips located in [dependencies](dependencies/) folder are meatn to work with [debian-based](https://en.wikipedia.org/wiki/List_of_Linux_distributions#Debian-based) distros:
 
 - Ubuntu
 - Linux Mint
 - ElementaryOS
 - Kubuntu
 - Lubuntu
+
+**Notice**
+
+All scripts asume you're setting up an AWS Ubuntu EC2 instance. This means that the system user in all scripts is always _ubuntu_.
+
+## Usage
+
+Just run scripts with _sudo bash_ command:
+
+```bash
+$ sudo bash ./dependencies/install_nginx.sh
+```
+
+Except `dependencies/install_rvm.sh` which SHOULD be run only with _bash_ command. Doing as super user, would install it under `/root` folder.
 
 ## Folders
 
@@ -21,9 +35,7 @@ AWS utilities installation and/or configuration
 
 ### Configurators
 
-For:
-
-- Let's Encrypt certificates auto renewal
+- [Let's Encrypt SSL certificates auto renewal](configurators/letsencrypt)
 - Unattended upgrades
 - Jenkins Nginx proxy
 
