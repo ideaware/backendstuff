@@ -17,4 +17,5 @@ apt-get -y install \
   libxslt-dev \
   libsqlite3-dev \
   unzip \
-  tree
+  tree \
+  libpq-dev
