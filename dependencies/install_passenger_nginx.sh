@@ -1,14 +1,15 @@
 #!/bin/bash
 
-#Taken from https://www.phusionpassenger.com/library/walkthroughs/deploy/ruby/ownserver/nginx/oss/trusty/install_passenger.html
+###
+# CONFIGURATION FOR UBUNTU 18.04
+###
 
+apt-get install -y apt-transport-https ca-certificates dirmngr gnupg
 apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 561F9B9CAC40B2F7
-apt-get install -y apt-transport-https ca-certificates
 
-sh -c 'echo deb https://oss-binaries.phusionpassenger.com/apt/passenger trusty main > /etc/apt/sources.list.d/passenger.list'
+sh -c 'echo deb https://oss-binaries.phusionpassenger.com/apt/passenger bionic main > /etc/apt/sources.list.d/passenger.list'
 apt-get update
 
-apt-get install -y nginx-extras passenger
+apt-get install -y libnginx-mod-http-passenger
 
-echo "Remember you need to uncomment lines 'passenger_root' and 'passenger_ruby' in '/etc/nginx/nginx.conf' file"
-echo "and then restart nginx with 'sudo service nginx restart'"
+echo "For Ubuntu 14.04 see https://www.phusionpassenger.com/docs/tutorials/deploy_to_production/installations/oss/ownserver/ruby/nginx/"
