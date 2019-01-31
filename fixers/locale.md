@@ -29,13 +29,15 @@ See [Ask Ubuntu 1](http://askubuntu.com/a/144448/167553)
 
 "Manually" fixing locales
 
-A) `sudo dpkg-reconfigure locales`
-B) `sudo apt-get --reinstall install language-pack-en`
-C) `sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8`
+1. `sudo dpkg-reconfigure locales`
+2. `sudo apt-get --reinstall install language-pack-en`
+3. `sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8`
 
 See [Ask Ubuntu 2](https://askubuntu.com/a/144244/167553)
 
 ## Option 3
+
+> Update January 2019, This one has been working very well for me.
 
 ```bash
 $ echo export LANGUAGE=en >> ~/.profile
