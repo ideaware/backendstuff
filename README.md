@@ -32,6 +32,7 @@ AWS utilities installation and/or configuration
 - [Let's Encrypt SSL certificates auto renewal](configurators/letsencrypt)
 - Unattended upgrades
 - Jenkins Nginx proxy
+- [Capistrano configuration for Rails apps deployments](configurators/capistrano)
 
 ### Dependencies
 
