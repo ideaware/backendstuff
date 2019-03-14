@@ -92,7 +92,7 @@ $ touch ~/.ssh/config
 $ nano ~/.ssh/config
 ```
 
-In order to connect to the repository without specifying the key, one of the steps in the [Multi git](multi-git) setup is what we need:
+In order to connect to the repository without specifying the key, one of the steps in the [Multi git][multi-git] setup is what we need:
 
 ### For GitHub
 
