@@ -71,13 +71,13 @@ As such, Capistrano runs a set of commands, in a given order, to setup and deplo
 
 So, How do you normally keep your app in the server up to date? You have to pull changes from your repo. If it's a private one, you'd need access to it.
 
-The easiest way is by setting an SSH-key [1](ssh-bitbucket) [2](ssh-github) [3](multi-git).
+The easiest way is by setting an SSH-key [1][ssh-bitbucket] [2][ssh-github] [3][multi-git].
 
 > The other option is letting the password prompt appear but that one is not automatable.
 
 ## Letting Capistrano pull changes from private repo
 
-After generating a new SSH-key [1](ssh-bitbucket) [2](ssh-github) [3](multi-git) and setting it up in your repo, do the following.
+After generating a new SSH-key [1][ssh-bitbucket] [2][ssh-github] [3][multi-git] and setting it up in your repo, do the following.
 
 > Ideally, you should have all your ssh keys under folder
 >
