@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# Assuming nginx is the default web server
+
 /opt/certbot-auto renew \
    --noninteractive \
    --post-hook "service nginx restart"

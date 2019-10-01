@@ -1,14 +1,22 @@
-# Ideaware Backend Team's Stuff
+# Stuff for Backends
 
-This repo collects configuration scripts, server hacks, links, etc.
+A collection of configuration scripts for Ruby on Rails applications(mainly) hosted in Ubuntu servers. Most of the work present here should work for Ubuntu 12.04+ machines.
 
-These scrips located in [dependencies](dependencies/) folder work only on [debian-based](https://en.wikipedia.org/wiki/List_of_Linux_distributions#Debian-based) distros:
+Scrips located in [dependencies](dependencies/) folder are meant to work with [debian-based Linux distros](https://en.wikipedia.org/wiki/List_of_Linux_distributions#Debian-based).
 
-- Ubuntu
-- Linux Mint
-- ElementaryOS
-- Kubuntu
-- Lubuntu
+**Notice**
+
+All scripts asume you're setting up an AWS Ubuntu EC2 instance. This means that the system user in all scripts is always _ubuntu_. Bear it in mind when applying these scripts to a different system user.
+
+## Usage
+
+Run scripts with _sudo bash_ command:
+
+```bash
+$ sudo bash ./dependencies/install_nginx.sh
+```
+
+Except `dependencies/install_rvm.sh` which SHOULD be run only with _bash_ command. Doing as super user, would install RVM under `/root` folder.
 
 ## Folders
 
@@ -21,11 +29,10 @@ AWS utilities installation and/or configuration
 
 ### Configurators
 
-For:
-
-- Let's Encrypt certificates auto renewal
+- [Let's Encrypt SSL certificates auto renewal](configurators/letsencrypt)
 - Unattended upgrades
 - Jenkins Nginx proxy
+- [Capistrano configuration for Rails apps deployments](configurators/capistrano)
 
 ### Dependencies
 
